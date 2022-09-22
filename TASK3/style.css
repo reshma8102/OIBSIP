@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: ghostwhite;
+    font-family: Verdana,Tahoma, sans-serif;
+}
+h2{
+    color:rgb(22, 231, 231);
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #032a42;
+}
+.fpage{
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.applicationTitle{
+    align-items: center;
+    font-size: x-large;
+    text-align: center;
+    padding-top:6%;
+    padding-bottom: 10%;
+}
+.centerMy{
+    margin: auto;
+    padding-bottom: 100px;
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+.centerMy .faren label{
+    display: block;
+    font-size: 30px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ .centerMy .celci label{
+     display: block;
+     font-size: 30px;
+     padding: 30px;
+     font-family:Arial, Helvetica, sans-serif;
+ }
+.centerMy input[type=text]{
+    width: 10%;
+    padding: 10px;
+    scrollbar-width: 0;
+    background-color:rgb(22, 231, 231);
+    font-weight: bold;
+    text-align: center;
+    color: #032a42; 
+    font-size: 20px;
+    border-radius: 50%;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15%;
+    text-align: center;
+}
+.buttons button{
+    color:#0a5d90;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 15%;
+}
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+
+    .centerMy{
+        margin: auto;
+        text-align: center;
+        flex-direction: row;
+        width: auto;
+    }
+    .applicationTitle{
+       padding-bottom: 5%;
+    }
+    .centerMy input[type=text]{
+        width: 30%;
+    }
+    .buttons button {
+        margin-bottom: 50px;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+}
